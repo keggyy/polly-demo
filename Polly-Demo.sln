@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.API", "Polly.API\Polly.API.csproj", "{386571AA-688F-46EB-98DE-C0CA1A03F812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.Console", "Polly.Console\Polly.Console.csproj", "{A061E454-5E26-4586-9077-A3708AB9266B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{386571AA-688F-46EB-98DE-C0CA1A03F812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386571AA-688F-46EB-98DE-C0CA1A03F812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386571AA-688F-46EB-98DE-C0CA1A03F812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386571AA-688F-46EB-98DE-C0CA1A03F812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A061E454-5E26-4586-9077-A3708AB9266B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A061E454-5E26-4586-9077-A3708AB9266B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A061E454-5E26-4586-9077-A3708AB9266B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A061E454-5E26-4586-9077-A3708AB9266B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47B2CCDE-C956-4F84-8A19-3FA2E24FA790}
+	EndGlobalSection
+EndGlobal
