@@ -25,7 +25,7 @@ namespace Polly.Console.Classes.Policies
                 logger.WriteError(r.Message);
                 return true;
             })
-            .CircuitBreakerAsync(numEventsBeforeBreak, TimeSpan.FromSeconds(30), (message, timeSpan) =>
+            .CircuitBreakerAsync(numEventsBeforeBreak, TimeSpan.FromSeconds(10), (message, timeSpan) =>
             {
                 logger.WriteInfo("Circuit break start");
             }, () => {

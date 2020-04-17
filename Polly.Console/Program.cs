@@ -56,7 +56,7 @@ namespace Polly.Console
                 //Circuit Break
                 services.AddHttpClient<DemoClient>("CircuitBreak", clientOption)
                 .AddHttpMessageHandler<TraceHandler>()
-                .AddWaitAndRetryPolicy(5)
+                .AddWaitAndRetryPolicy()
                 .AddCircuitBreaker()
                 .AddTimeoutPolicy();
 
@@ -122,19 +122,18 @@ namespace Polly.Console
                                             count = response.Count;
                                             logger.WriteInfo($"Result Count {count}");
                                             exitWhile = count > 0;
-                                            System.Threading.Thread.Sleep(2000);
                                         }
                                         catch (Exception ex)
                                         {
                                             logger.WriteError(ex.Message);
                                         }
 
-                                        if (DateTime.Now.Subtract(start).TotalSeconds > 25 && !exitWhile)
+                                        if (DateTime.Now.Subtract(start).TotalSeconds > 15 && !exitWhile)
                                         {
                                             await classicExecutor.BreakApi(false);
                                             logger.WriteInfo("API Enabled");
                                         }
-                                    } while (DateTime.Now.Subtract(start).TotalSeconds < 30 && !exitWhile);
+                                    } while (DateTime.Now.Subtract(start).TotalSeconds < 40 && !exitWhile);
                                 }
                                 else
                                 {
